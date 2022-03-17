@@ -1,0 +1,17 @@
+<div class='container'>
+<h1>Movies - Sean Dowdall, s00210945</h1>
+<app-add-movie></app-add-movie>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-list-movies (onSelectedMovie)="setSelectedMovie($event)"></app-list-movies>
+        </div>
+        <div class="col">
+            <app-movie-detail [movieDetails]="mySelectedMovie"></app-movie-detail>
+        </div>
+    </div>
+</div>
+
+
